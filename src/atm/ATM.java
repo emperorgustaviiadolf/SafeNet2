@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class ATM {
 	
+	private int thousand = 10;
 	private int hundred = 10;
 	private int fifty = 10;
 	private  int twenty = 10;
@@ -13,6 +14,7 @@ public class ATM {
 	private String money = "";
 	
 	public ATM() {
+		thousand = 10;
 		hundred = 10;
 		fifty = 10;
 		twenty = 10;
@@ -23,6 +25,7 @@ public class ATM {
 	}
 	
 	public void R() {
+		thousand = 10;
 		hundred = 10;
 		fifty = 10;
 		twenty = 10;
@@ -34,6 +37,7 @@ public class ATM {
 		money = xMoney.replaceAll("[^0-9.]", "");
 		int numAmount = Integer.parseInt(money);
 		int counter = 0;
+		int tempThousand = thousand;
 		int tempHundred = hundred;
 		int tempFifty = fifty;
 		int tempTwenty = twenty;
